@@ -8,7 +8,7 @@ class packmansprite(sprite.Sprite):
     def __init__(self,picture,x,y):
         sprite.Sprite.__init__(self)
 
-        elf.picture = transform.scale(image.load(picture), (100,100))
+        self.picture = transform.scale(image.load(picture), (100,100))
 
         self.rect = self.picture.get_rect()
         self.rect.x = x
